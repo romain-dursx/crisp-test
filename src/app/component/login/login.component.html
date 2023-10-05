@@ -1,0 +1,13 @@
+<h1>Connexion</h1>
+
+<form [formGroup]="form">
+  <div class="form-group">
+    <label for="email">Adresse mail</label>
+    <input type="email" id="email" formControlName="email" />
+  </div>
+  <div class="form-group">
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" formControlName="password" />
+  </div>
+  <button type="submit" (click)="onSubmit()">Connexion</button>
+</form>
